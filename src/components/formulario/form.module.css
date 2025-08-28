@@ -39,6 +39,7 @@
     font-style: none;
     margin-right: 36px;
     height: min-content;
+    margin-bottom: 36px;
 }
 
 .pResultado {
@@ -54,7 +55,7 @@
     font-weight: bold;
 }
 .imagem {
-    width:80%;
+    width:85%;
     max-height: 80%;
     display: block;
     margin: 0 auto;
