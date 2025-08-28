@@ -23,10 +23,14 @@ const Formulario = () => {
     return (
         <div className="container">
             <form className={styles.form}>
-            <label className={styles.label}>Sua altura (em CM)</label>
+            <div>
+            <label className={styles.label}>Sua altura (em CM):</label>
             <input min= "0" max="200" onChange={(e) => setAltura(e.target.value)} id='altura' type="number" className={styles.input} />
-            <label className={styles.label}>Seu peso (em KG)</label>
+            </div>
+            <div>
+                <label className={styles.label}>Seu peso (em KG):</label>
             <input min= "0" max="300" onChange={(e) => setPeso(e.target.value)} id='peso' className={styles.input} type="number" />
+            </div>
             <button onClick={CalculaIMC} id='botao' type="number" className={styles.button}>CALCULAR</button>
             {imc && <p className={styles.pResultado}>Seu IMC é de: <span className={styles.fontAzul}>{imc}</span></p>}
             <img className={styles.imagem} src={tabela} alt="" />
